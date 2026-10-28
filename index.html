@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="veronaimars: projects and contributions.">
+<title>veronaimars</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='%23241226'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500;700&display=swap">
+<style>
+:root{
+  --ink:#1b1523; --muted:#6a6572; --ground:#ffffff; --line:#e3e4e8; --surface:#f0f1f4; --accent:#4a2150;
+  --sans:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --ink:#efe9f2; --muted:#a79fae; --ground:#140e17; --line:#2d2232; --surface:#1f1623; --accent:#a46aa8; color-scheme:dark } }
+:root[data-theme="dark"]{ --ink:#efe9f2; --muted:#a79fae; --ground:#140e17; --line:#2d2232; --surface:#1f1623; --accent:#a46aa8; color-scheme:dark }
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55;min-height:100svh;display:flex;flex-direction:column}
+main{flex:1;max-width:680px;width:100%;margin:0 auto;padding:clamp(48px,12vh,120px) 16px 40px}
+h1{margin:0 0 6px;font-family:var(--mono);font-weight:700;font-size:28px;letter-spacing:-.03em}
+.lede{margin:0 0 40px;color:var(--muted);font-weight:300;font-size:19px;text-wrap:balance}
+ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+li a{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:baseline;padding:16px 18px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:inherit;background:var(--ground)}
+li a:hover{background:var(--surface);border-color:var(--accent)}
+li a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.name{font-family:var(--mono);font-weight:500}
+.what{color:var(--muted);font-size:15px;display:block;margin-top:2px}
+.role{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+footer{max-width:680px;width:100%;margin:0 auto;padding:16px 16px 28px;display:flex;gap:18px;font-size:14px;color:var(--muted)}
+footer a{color:inherit;text-decoration:none}
+footer a:hover{color:var(--ink)}
+</style>
+</head>
+<body>
+<main>
+  <h1>veronaimars</h1>
+  <p class="lede">Things I build, and things I help build.</p>
+  <ul>
+    <li><a href="https://tided.io"><span><span class="name">tided</span><span class="what">A daemon that keeps your agent's grounding current, on your own machine.</span></span><span class="role">building</span></a></li>
+    <li><a href="https://k3sm.io"><span><span class="name">k3sm</span><span class="what">Kubernetes for macOS, natively. Maintained by kitsumiko.</span></span><span class="role">contributor</span></a></li>
+    <li><a href="https://oakfall.app"><span><span class="name">oakfall</span><span class="what">A quiet writing app for long work.</span></span><span class="role">building</span></a></li>
+  </ul>
+</main>
+<footer>
+  <a href="https://github.com/veronaimars">github</a>
+</footer>
+</body>
+</html>
